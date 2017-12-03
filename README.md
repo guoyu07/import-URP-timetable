@@ -1,4 +1,4 @@
-# import-URP-timetable [![License](https://img.shields.io/github/license/mashape/apistatus.svg)](LICENSE)
+# import-URP-timetable [![License](https://img.shields.io/badge/license-MIT%20License-blue.svg)](LICENSE)
 
 使用PHPExcel解析Excel课表数据并上传至数据库中
  - conn.php：配置数据库信息
