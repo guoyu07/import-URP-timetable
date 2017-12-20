@@ -5,5 +5,6 @@
  - freeroom.php：解析空教室数据
  - student.php：解析班级课表数据
  - teacher.php：解析教师课表数据
+ - exam.php：解析考试安排数据
 
 **请使用php-cli模式使用**
