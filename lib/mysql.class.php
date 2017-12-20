@@ -53,4 +53,11 @@ class mysql{
         }
         return $this->query("insert into `".$this->deStr($table)."` (`build`, `room`, `type`, `seat`, `section`, `day`, `week`) values ('".$this->deStr($build)."', '".$this->deStr($room)."', '".$this->deStr($type)."', '".$this->deStr($seat)."', '".$this->deStr($section)."', '".$this->deStr($day)."', '".$this->deStr($week)."')");
     }
+    //插入考试安排数据
+    public function add_exam($table,$time,$name,$class,$num,$room){
+        if(empty($table) || empty($time) || empty($name) || empty($class) || empty($num) || empty($room)){
+            return false;
+        }
+        return $this->query("insert into `".$this->deStr($table)."` (`time`, `name`, `class`, `num`, `room`) values ('".$this->deStr($time)."',  '".$this->deStr($name)."', '".$this->deStr($class)."', '".$this->deStr($num)."', '".$this->deStr($room)."')");
+    }
 }
